@@ -33,7 +33,7 @@ body{
     left: 0%;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../imagenes/Fondo3.jpg') ;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('./Imagenes/Fondo3.jpg') ;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 70%, 75% 100%, 25% 100%, 0 70%);
     z-index: -1;
@@ -316,7 +316,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../imagenes/automati.jpg') ;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('./Imagenes/automati.jpg') ;
     background-size: 30%;
     clip-path: polygon(53% 0, 100% 0, 100% 24%, 100% 53%, 75% 70%, 50% 100%, 25% 70%, 0 57%, 0 28%, 0 0);
     z-index: -1;
@@ -388,7 +388,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../imagenes/Fondo2.jpg') ;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('./Imagenes/Fondo2.jpg') ;
     background-size: 30%;
     clip-path: polygon(53% 0, 100% 0, 100% 24%, 100% 53%, 75% 70%, 50% 100%, 25% 70%, 0 57%, 0 28%, 0 0);
     z-index: -1;
@@ -456,7 +456,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../imagenes/Fondo4.png') ;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('./Imagenes/Fondo4.png') ;
     background-size: 100%;
     clip-path: polygon(53% 0, 100% 0, 100% 24%, 100% 53%, 75% 70%, 50% 100%, 25% 70%, 0 57%, 0 28%, 0 0);
     z-index: -1;
