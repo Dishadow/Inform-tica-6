@@ -33,7 +33,7 @@ body{
     left: 0%;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../imagenes/Fondo3.jpg') ;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../Imagenes/Fondo3.jpg') ;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 70%, 75% 100%, 25% 100%, 0 70%);
     z-index: -1;
@@ -316,7 +316,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../imagenes/automati.jpg') ;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../Imagenes/automati.jpg') ;
     background-size: 30%;
     clip-path: polygon(53% 0, 100% 0, 100% 24%, 100% 53%, 75% 70%, 50% 100%, 25% 70%, 0 57%, 0 28%, 0 0);
     z-index: -1;
@@ -388,7 +388,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../imagenes/Fondo2.jpg') ;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../Imagenes/Fondo2.jpg') ;
     background-size: 30%;
     clip-path: polygon(53% 0, 100% 0, 100% 24%, 100% 53%, 75% 70%, 50% 100%, 25% 70%, 0 57%, 0 28%, 0 0);
     z-index: -1;
@@ -427,7 +427,7 @@ body{
     grid-template-columns: 1fr;
 
 }
-/*Desarollo de la cuarta pagina*/
+/*Desarollo de la cuarta pagina (Algebra booleana)*/
 .container4{
     width: 90%;
     max-width: 1200px;
@@ -456,7 +456,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../imagenes/Fondo4.png') ;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../Imagenes/Fondo4.png') ;
     background-size: 100%;
     clip-path: polygon(53% 0, 100% 0, 100% 24%, 100% 53%, 75% 70%, 50% 100%, 25% 70%, 0 57%, 0 28%, 0 0);
     z-index: -1;
@@ -468,5 +468,50 @@ body{
     opacity: 1;
     opacity: 0.8;
     background-image: radial-gradient(#000000 1.2000000000000002px, #7cff8f 1.2000000000000002px);
+    background-size: 24px 24px;
+    }
+/*Desarollo de la 4.html (Revoluciones industriales) */
+.container5{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+.hero__container5{
+    text-align: center;
+}
+.hero5{
+    width: 100%;
+    height: 100vh;
+    min-height: 400px;
+    max-height: 500px;
+    position: relative;
+    display: grid; 
+    grid-template-rows: 100px 1fr;
+    color: white;
+}
+
+.hero5::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../Imagenes/Fondo5.jpg') ;
+    background-size: 50%;
+    clip-path: polygon(53% 0, 100% 0, 100% 24%, 100% 53%, 75% 70%, 50% 100%, 25% 70%, 0 57%, 0 28%, 0 0);
+    z-index: -1;
+}
+.abaut5{
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    min-height: 100px; 
+    align-items: center;
+    opacity: 1;
+    opacity: 0.8;
+    background-image: radial-gradient(#000000 1.2000000000000002px, #7e2020 1.2000000000000002px);
     background-size: 24px 24px;
     }
