@@ -1,0 +1,11 @@
+create database datos;
+
+create table numeros(
+    Id INT Primary Key,
+    Nombre Varchar (255),
+    Numero1 INT, 
+    Numero2 INT
+);
+
+insert into numeros(Id, Nombre,Numero1, Numero2)
+values ('1','Prueba2','4','6')

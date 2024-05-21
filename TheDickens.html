@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suma de Conjuntos de Números</title>
+<!– Implemetacion de una imagen como icono –>
+    <link rel="Icon" href="./Imagenes/infoico.png">
+    <!– Implemetacion de un formato de estilo, y una normalizacion –>
+    <link rel="stylesheet" href="./Estilos/estilo.css">
+    <link rel="stylesheet" href="./Estilos/normaliza.css">
+    <style>
+
+
+    </style>
+</head>
+<body>
+<header class="hero">
+        <nav class="nav container">
+            <div class="nav__Logo">
+                <a class="nav__linkLogo" href="index.html">The Dickens</a>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__itenms">
+                    <a  class="nav__links" target="_blank" href="1.html">Calcular Balance</a>
+                </li>
+                <img src="Imagenes/x.svg"  class="nav__close">
+            </ul>
+            <div class="nav__menu">
+                <img src="Imagenes/menu.svg">
+            </div>
+        </nav>
+    
+        <section class="hero__container container">
+            <h1 class="hero__title">Estados Financieros</h1>
+            <p class="hero__descrip">Para la empresa The Dickens Clona </p>
+        </section>  
+    </header>
+  <br><br>
+  <h1 class="balanceGeneral container">Balance General</h1>
+<section class="balanceGeneralTitulo">
+    
+</section>
+
+  <section class="balance_general ">
+    
+    <section class="Activo_Circulante">
+        <div class="pair">
+            <h2>Activo ciruclante</h2>
+        <label for="caja">Caja</label>
+        <input value="5000" type="number" id="caja" step="0.01">
+          
+
+        <label for="bancos">Bancos</label>
+        <input value="20000" type="number" id="bancos" step="0.01">
+        
+
+        <label for="clientes">Inversiones a corto plazo</label>
+        <input value="4000" type="number" id="clientes" step="0.01">
+        
+        <label for="ChequesTransito">Cheques a transito</label>
+        <input value="1000" type="number" id="ChequesTransito" step="0.01">
+
+        <label for="almacen">Cuentas por Cobrar </label>
+        <input value="50000" type="number" id="almacen" step="0.01">
+       
+        
+        <label class="negritas" for="Activo_Circulanteresultado">Actvio Circulante:</label>
+        <input type="text" id="Activo_CirculanteInput" readonly>
+        
+        </div>
+        
+    </section>
+
+    <section class="Activo_Fijo">
+    <div class="pair">
+        <h2>Activo Fijo</h2>
+
+        <label for="Transporte">Veiculos de transporte</label>
+        <input value="300000" type="number" id="Transporte" step="0.01">
+
+        <label for="EquipoOficina">Equipo de Oficina</label>
+        <input value="20000" type="number" id="EquipoOficina" step="0.01">
+
+        <label class="negritas" for="Activo_Fijo">Actvio Fijo:</label>
+        <input type="text" id="Activo_fijoInput" readonly>
+    </div>
+    </section>
+
+    <section class="Otros_Activos">
+        <div class="pair">
+            <h2>Otros Activos</h2>
+    
+            <label for="DepositosyGarantias">Depositos y garantias</label>
+            <input value="10000" type="number" id="DepositosyGarantias" step="0.01">
+    
+            <label class="negritas" for="Otros_Activos">Otros Activos:</label>
+            <input type="text" id="Otros_ActivosInput" readonly>
+        </div>
+        </section>
+
+
+    <section class="Pasivo_Circulante">
+        <h2>Pasivo Circulante</h2>
+        <div class="pair">
+        <label for="Proveedores">Cuentas Por pagar :</label>
+        <input value="40000" type="number" id="Proveedores" step="0.01">
+
+        <label for="DocPagar">Salarios</label>
+        <input value="20000" type="number" id="DocPagar" step="0.01">
+
+
+        <label class="negritas" for="PasivoCiruclante">Pasivo Circulante:</label>
+        <input type="text" id="PasivoCiruclante" readonly>
+        </div>
+    </section>
+
+    <section class="Pasivo_Fijo">
+        <h2>Pasivo Fijo</h2>
+        <div class="pair">
+        <label for="AcredoresHipotecarios">Prestamo de Veiculos</label>
+        <input  value="100000" type="number" id="AcredoresHipotecarios" step="0.01">
+
+        <label class="negritas" for="PasivoFijo">Pasivo Fijo: </label>
+        <input type="text" id="PasivoFijoInput" readonly>
+        </div>
+    </section>
+    <section class="Total_ActivosPasivos" >
+        <div>
+            <section class="Total_Activos">
+                <h2>Total de Activos: </h2>
+                <input value="0" id="TotalActivos" readonly>
+            </section>
+            <section class="Total_Pasivos">
+                <h2>Total de Pasivos: </h2>
+                <input value="0" id="TotalPasivos" readonly>
+    </section>
+    
+    </section>
+    <section class="Patrimonio_neto">
+        <h2>Patrimonio Neto</h2>
+        <div class="pair">
+        <label for="Capital_Social">Capital Social</label>
+        <input value="200000" type="number" id="Capital_Social" step="0.01">
+
+        <label for="Utilidades_Retenidas">Utilidades Retenidas</label>
+        <input value="50000" type="number" id="Utilidades_Retenidas" step="0.01">
+
+
+        <label class="negritas" for="PatrimonioNeto">Total del patrimonio Neto:</label>
+        <input type="text" id="PatrimonioNetoInput" readonly>
+        </div>
+    </section>
+    
+    </section>
+  </section>
+  <section class="EstadodeResultados ">
+    <br><br>
+    <hr>
+    <h1 class="EstadodeResultadosContenedor container">Estado de Resultados</h1>
+    <form>
+        <div class="form-group">
+            <h2>Ingresos</h2>
+            <label for="ingresos_servicios_transporte_farmacias">Ingresos por servicios de transporte - Farmacias</label>
+            <input type="number" id="ingresos_servicios_transporte_farmacias" name="ingresos_servicios_transporte_farmacias" value="350000">
+        </div>
+        <div class="form-group">
+            <label for="ingresos_servicios_transporte_almacenes">Ingresos por servicios de transporte - Almacenes</label>
+            <input type="number" id="ingresos_servicios_transporte_almacenes" name="ingresos_servicios_transporte_almacenes" value="150000">
+        </div>
+        <div class="form-group">
+            <label for="total_ingresos">Total de Ingresos</label>
+            <input type="number" id="total_ingresos" name="total_ingresos" value="500000" readonly>
+        </div>
+        <!-- Gastos Operativos -->
+        <br>
+        <h2>Gastos Operativos</h2>
+        <div class="form-group">
+            <label for="combustible">Combustible</label>
+            <input type="number" id="combustible" name="combustible" value="60000">
+        </div>
+        <div class="form-group">
+            <label for="mantenimiento_vehiculos">Mantenimiento de vehículos</label>
+            <input type="number" id="mantenimiento_vehiculos" name="mantenimiento_vehiculos" value="35000">
+        </div>
+        <div class="form-group">
+            <label for="seguro_vehiculos">Seguro de vehículos</label>
+            <input type="number" id="seguro_vehiculos" name="seguro_vehiculos" value="15000">
+        </div>
+        <div class="form-group">
+            <label for="salarios_conductores">Salarios de conductores</label>
+            <input type="number" id="salarios_conductores" name="salarios_conductores" value="100000">
+        </div>
+        <div class="form-group">
+            <label for="uniformes_equipos_seguridad">Uniformes y equipos de seguridad</label>
+            <input type="number" id="uniformes_equipos_seguridad" name="uniformes_equipos_seguridad" value="8000">
+        </div>
+        <div class="form-group">
+            <label for="gastos_administrativos">Gastos administrativos</label>
+            <input type="number" id="gastos_administrativos" name="gastos_administrativos" value="18000">
+        </div>
+        <div class="form-group">
+            <label for="licencias_permisos">Licencias y permisos</label>
+            <input type="number" id="licencias_permisos" name="licencias_permisos" value="8000">
+        </div>
+        <div class="form-group">
+            <label for="total_gastos_operativos">Total Gastos Operativos</label>
+            <input type="number" id="total_gastos_operativos" name="total_gastos_operativos" value="244000" readonly>
+        </div>
+        <!-- Gastos Generales y Administrativos -->
+        <br>
+        <h2>Gastos Generales y Administrativos</h2>
+        <div class="form-group">
+            <label for="alquiler_oficina">Alquiler de oficina</label>
+            <input type="number" id="alquiler_oficina" name="alquiler_oficina" value="25000">
+        </div>
+        <div class="form-group">
+            <label for="servicios_publicos">Servicios públicos (electricidad, agua, internet)</label>
+            <input type="number" id="servicios_publicos" name="servicios_publicos" value="10000">
+        </div>
+        <div class="form-group">
+            <label for="suministros_oficina">Suministros de oficina</label>
+            <input type="number" id="suministros_oficina" name="suministros_oficina" value="5000">
+        </div>
+        <div class="form-group">
+            <label for="marketing_publicidad">Marketing y publicidad</label>
+            <input type="number" id="marketing_publicidad" name="marketing_publicidad" value="12000">
+        </div>
+        <div class="form-group">
+            <label for="consultoria_asesoria_legal">Consultoría y asesoría legal</label>
+            <input type="number" id="consultoria_asesoria_legal" name="consultoria_asesoria_legal" value="8000">
+        </div>
+        <div class="form-group">
+            <label for="total_gastos_generales_administrativos">Total Gastos Generales y Administrativos</label>
+            <input type="number" id="total_gastos_generales_administrativos" name="total_gastos_generales_administrativos" value="60000" readonly>
+        </div>
+        <br>
+        <!-- Otros Gastos -->
+        <h2>Otros Gastos</h2>
+        <div class="form-group">
+            <label for="depreciacion_vehiculos">Depreciación de vehículos</label>
+            <input type="number" id="depreciacion_vehiculos" name="depreciacion_vehiculos" value="20000">
+        </div>
+        <div class="form-group">
+            <label for="contingencias_fondos_reserva">Contingencias y fondos de reserva</label>
+            <input type="number" id="contingencias_fondos_reserva" name="contingencias_fondos_reserva" value="8000">
+        </div>
+        <div class="form-group">
+            <label for="total_otros_gastos">Total Otros Gastos</label>
+            <input type="number" id="total_otros_gastos" name="total_otros_gastos" value="28000" readonly>
+        </div>
+        <!-- Total de Gastos -->
+        <div class="form-group">
+            <label for="total_gastos">Total de Gastos</label>
+            <input type="number" id="total_gastos" name="total_gastos" value="332000" readonly>
+        </div>
+        <!-- Utilidad Operativa -->
+        <div class="form-group">
+            <label for="utilidad_operativa">Utilidad Operativa</label>
+            <input type="number" id="utilidad_operativa" name="utilidad_operativa" value="168000" readonly>
+        </div>
+        <!-- Gastos Financieros -->
+        <div class="form-group">
+            <label for="gastos_financieros">Gastos Financieros</label>
+            <input type="number" id="gastos_financieros" name="gastos_financieros" value="20000">
+        </div>
+        <!-- Utilidad antes de Impuestos -->
+        <div class="form-group">
+            <label for="utilidad_antes_impuestos">Utilidad antes de Impuestos</label>
+            <input type="number" id="utilidad_antes_impuestos" name="utilidad_antes_impuestos" value="148000" readonly>
+        </div>
+        <!-- Impuestos -->
+        <div class="form-group">
+            <label for="impuestos">Impuestos (30%)</label>
+            <input type="number" id="impuestos" name="impuestos" value="44400">
+        </div>
+        <!-- Utilidad Neta -->
+        <div class="form-group">
+            <label for="utilidad_neta">Utilidad Neta</label>
+            <input type="number" id="utilidad_neta" name="utilidad_neta" value="103600" readonly>
+        </div>
+    </form>
+</div>
+  </section>
+  <section class="FlujosDeEfectivo " >    
+    <br><br>
+    <hr>
+    <h1 class="container">Proyección de Flujos de Efectivo a 5 Años</h1>
+    <div class="EstadodeResultados">
+        <form id="flujo-efectivo-5-anos">
+            <h2>Flujos de Efectivo Anuales</h2>
+
+            <label for="flujo-ano-1">Flujo de efectivo Año 0:</label>
+            <input type="number" id="flujo-ano-1" name="flujo-ano-1" value="-168000" readonly><br>
+
+            <label for="flujo-ano-1">Flujo de efectivo Año 1:</label>
+            <input type="number" id="flujo-ano-1" name="flujo-ano-1" value="184800" readonly><br>
+    
+            <label for="flujo-ano-2">Flujo de efectivo Año 2:</label>
+            <input type="number" id="flujo-ano-2" name="flujo-ano-2" value="203280" readonly><br>
+    
+            <label for="flujo-ano-3">Flujo de efectivo Año 3:</label>
+            <input type="number" id="flujo-ano-3" name="flujo-ano-3" value="221808" readonly><br>
+    
+            <label for="flujo-ano-4">Flujo de efectivo Año 4:</label>
+            <input type="number" id="flujo-ano-4" name="flujo-ano-4" value="246488" readonly><br>
+    
+            <label for="flujo-ano-5">Flujo de efectivo Año 5:</label>
+            <input type="number" id="flujo-ano-5" name="flujo-ano-5" value="270562.8" readonly><br>
+        </form>
+    </div>
+    </section>
+
+<section></section>
+
+  <section class="BotonResultadoTotal">
+    <button class="UPButton" onclick="sumarNumeros()">Calcular Balance General</button><br><br>
+  </section>
+  <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav--footer">
+                <h2 class="footer__Title">Almacen</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__itenms">
+                        <a  class="nav__links" target="_blank" href="1.html">Automatización</a>
+                </ul>
+            </nav>
+            <form class="footer__from">
+                <div class="footer__social">
+                    <br><br>
+                    <h2>Canal de youtube</h2>
+                    <br><br>
+                    <a href="https://www.youtube.com/channel/UCTJJrjCNzDrrY0x4wGbAvRQ" class="footer__icons"><img src="./Imagenes/youtube.svg" class="footer__img"></a>
+                </div>
+            </form>
+            <section class="footer__copy container">
+                <h3 class="footer__copyrigt">Derechos reservados: $copy Flores Beltran Juan Diego (Dishadow)</h3>
+            </section>
+        </section>
+    </footer>
+  <script>
+    function sumarNumeros(){
+        <!-- Suma de Activo ciruclante -->
+
+    var caja = parseFloat(document.getElementById("caja").value);
+    var bancos = parseFloat(document.getElementById("bancos").value);
+    var clientes = parseFloat(document.getElementById("clientes").value);
+    var almacen = parseFloat(document.getElementById("almacen").value);
+    var ChequesTransito = parseFloat(document.getElementById("ChequesTransito").value);
+    
+      var ActivoCirculanteSuma = caja + bancos + clientes + almacen + ChequesTransito;
+      document.getElementById("Activo_CirculanteInput").value = ActivoCirculanteSuma.toFixed(2);
+      
+    
+      var Transporte = parseFloat(document.getElementById("Transporte").value);
+      var EquipoOficina = parseFloat(document.getElementById("EquipoOficina").value);
+      var ActivoFijoSuma = Transporte + EquipoOficina;
+      document.getElementById("Activo_fijoInput").value = ActivoFijoSuma.toFixed(2);
+
+      var DepositosyGarantias = parseFloat(document.getElementById("DepositosyGarantias").value);
+      var OtrosActivos = DepositosyGarantias;
+      document.getElementById("Otros_ActivosInput").value = OtrosActivos.toFixed(2);
+
+      var Activo_CirculanteInput = parseFloat(document.getElementById("Activo_CirculanteInput").value);
+    var Activo_fijoInput = parseFloat(document.getElementById("Activo_fijoInput").value);
+    var Otros_ActivosInput = parseFloat(document.getElementById("Otros_ActivosInput").value);
+    var TotlaDeActivos = Activo_CirculanteInput + Activo_fijoInput+Otros_ActivosInput;
+      document.getElementById("TotalActivos").value = TotlaDeActivos.toFixed(2);
+
+
+
+    var Proveedores = parseFloat(document.getElementById("Proveedores").value);
+    var DocPagar = parseFloat(document.getElementById("DocPagar").value);
+      var PasivocirulanteResulatado = Proveedores + DocPagar;
+      document.getElementById("PasivoCiruclante").value = PasivocirulanteResulatado.toFixed(2);
+
+    var AcredoresHipotecarios = parseFloat(document.getElementById("AcredoresHipotecarios").value);
+      var PasivoFijoResultado = AcredoresHipotecarios;
+      document.getElementById("PasivoFijoInput").value = PasivoFijoResultado.toFixed(2);
+
+      var PasivoCiruclante = parseFloat(document.getElementById("PasivoCiruclante").value);
+    var PasivoFijoInput = parseFloat(document.getElementById("PasivoFijoInput").value);
+    var TotlaDePasivos = PasivoCiruclante + PasivoFijoInput;
+      document.getElementById("TotalPasivos").value = TotlaDePasivos.toFixed(2);
+
+
+      var Capital_Social = parseFloat(document.getElementById("Capital_Social").value);
+    var Utilidades_Retenidas = parseFloat(document.getElementById("Utilidades_Retenidas").value);
+    var Total_Patrimonio_Neto = Capital_Social + Utilidades_Retenidas;
+      document.getElementById("PatrimonioNetoInput").value = Total_Patrimonio_Neto.toFixed(2);
+  
+  
+
+      }</script>
+
+</body>
+</html>

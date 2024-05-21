@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 body{
     font-family: "Ubuntu", sans-serif;
@@ -8,7 +9,7 @@ body{
 }
 
 .container{
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
@@ -17,7 +18,7 @@ body{
 
 .hero{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     min-height: 600px;
     max-height: 800px;
     position: relative;
@@ -33,9 +34,9 @@ body{
     left: 0%;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../Imagenes/Fondo3.jpg') ;
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 75% 100%, 25% 100%, 0 70%);
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('/imagenes/Fondo1.jpg') ;
+    background-size: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
     z-index: -1;
 }
 
@@ -118,6 +119,48 @@ body{
     text-decoration: none;
     font-size: 40px;
 } 
+
+.balance_general{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+/* Negritas de los resultados del balance general */
+.Activo_CirculanteLabel label{
+    font-weight: bold; 
+}
+.pair {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.pair input {
+    width: 100%;
+}
+.negritas{
+    font-weight: bold;
+}
+.BotonResultadoTotal{
+    margin: 20px;
+    display: grid;
+    align-items: center;
+}
+.EstadodeResultados{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.balance_general{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
 /* De que trata Abaut*/
 .about__Container{
     height: 100%;
@@ -141,37 +184,6 @@ body{
 }
 .main__about{
     margin-left: 100px;
-}
-/* De que trata Abaut2*/
-.abaut2{
-    height: 100%;
-    width: 100%;
-    min-height: 100px; 
-    background-color: #7a7aff;
-    opacity: 0.8;
-    background-image: radial-gradient(#8b8b8b 1.5px, #dbdbdb 0.5px);
-    background-size: 24px 24px;
-    }
-.main__about2{
-    font-size: 30px;
-    text-align: justify;
-    color: black;
-}
-.main__about2__sub{
-    margin: 30px;
-    font-size: 30px;
-    text-align: justify;
-    color: black;
-}
-.abaut2__Text{
-    font-size: 40px;
-    text-align: justify;
-}
-.abaut3__Container{
-    
-    display: grid; 
-    align-items: center;
-    grid-template-columns: 1fr;
 }
 /* Desarollo de boton para redireccionamietno*/
 .btn-neon{
@@ -243,6 +255,97 @@ body{
     transition: 0.5s;
     transition-delay: 0.25s;
 }
+/* Apartado para subir actulizar el inventario*/
+.UpImages__Section{
+    --padding-container: 0;
+    display: grid;
+    align-content: center;
+    gap: 1em;
+    margin: 5em;
+    text-align: center;
+}
+.SelectImages{
+    cursor: pointer;
+}
+.laberImagen:hover,
+.laberImagen:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+.laberImagen{
+    --color: white;
+    --hover: #4533C8;
+}
+.UPButton:hover,
+.UPButton:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+.UPButton {
+    --color: white;
+    --hover: #4533C8;
+  }
+  button {
+    color: var(--color);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+  }
+  button:hover, button:focus {
+    border-color: var(--hover);
+    background:  #4533C8;
+    color: white;
+  }
+  button {
+    background:  #ffa260;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 1em;
+    padding: 1em 2em;
+  }
+  code {
+    color: #ffa260;
+    font: inherit;
+  }
+  .Button{
+    margin: 2em;
+  }
+  .span{
+    color: #4533C8;
+    font: inherit;
+  }
+.laber__text{
+    max-width: 500px;
+    display: grid;
+}
+.text__laber{
+    margin: 20px;
+    grid-auto-rows: max-content;
+    align-items: stretch;
+}
+.imagenRedimensionada {
+    width: 200px; /* Ancho deseado */
+    height: 200px; /* Altura deseada */
+    /* Otras propiedades CSS según tus necesidades */
+}
+
+#productoInfo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 1000;
+}
+
+/* Estilos para ocultar el contenedor */
+.hidden {
+    display: none;
+}
 /* Fotther o pie de pagina:*/
 .footer{
     background-color: rgb(22, 14, 32);
@@ -252,7 +355,6 @@ body{
     font-size: 2rem;
     margin-bottom: 30px;
     color: white;
-
 }
 .footer__copyrigt{
     color: whitesmoke;
@@ -262,7 +364,6 @@ body{
     grid-template-columns: 1fr ;
     justify-content: space-evenly;
     align-items: center;
-
 }
 .nav--footer{
     padding-bottom: 20px;
@@ -286,187 +387,3 @@ body{
     justify-content: center;
     text-align: center;
 }
-/* Pagina 2*/
-
-.container2{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: var(--padding-container);
-}
-.hero__container2{
-    text-align: center;
-}
-.hero2{
-    width: 100%;
-    height: 100vh;
-    min-height: 400px;
-    max-height: 500px;
-    position: relative;
-    display: grid; 
-    grid-template-rows: 100px 1fr;
-    color: white;
-}
-
-.hero2::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../Imagenes/automati.jpg') ;
-    background-size: 30%;
-    clip-path: polygon(53% 0, 100% 0, 100% 24%, 100% 53%, 75% 70%, 50% 100%, 25% 70%, 0 57%, 0 28%, 0 0);
-    z-index: -1;
-}
-
-.abaut22{
-    height: 100%;
-    width: 100%;
-    min-height: 100px; 
-    background-color: #000000;
-    opacity: 1;
-    background-image: radial-gradient(#b57b7b 1.2000000000000002px, #000000 1.2000000000000002px);
-    background-size: 24px 24px;
-    }
-.main__about22{
-    font-size: 30px;
-    text-align: justify;
-    color: white;
-}
-.main__about22__sub{
-    margin: 30px;
-    font-size: 30px;
-    text-align: justify;
-    color: white;
-}
-.abaut22__Text{
-    font-size: 40px;
-    text-align: justify;
-    color: white;
-}
-.abaut33__Container{
-    display: grid; 
-    align-items: center;
-    grid-template-columns: 1fr;
-
-}
-.abaut33{
-    background-color: #000000;
-    opacity: 1;
-    background-image: radial-gradient(#b57b7b 1.2000000000000002px, #000000 1.2000000000000002px);
-    background-size: 24px 24px;
-}
-/*Desarollo de la tercer pagina*/
-.container22{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: var(--padding-container);
-}
-.hero__container22{
-    text-align: center;
-}
-.hero22{
-    width: 100%;
-    height: 100vh;
-    min-height: 400px;
-    max-height: 500px;
-    position: relative;
-    display: grid; 
-    grid-template-rows: 100px 1fr;
-    color: white;
-}
-
-.hero22::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../Imagenes/Fondo2.jpg') ;
-    background-size: 30%;
-    clip-path: polygon(53% 0, 100% 0, 100% 24%, 100% 53%, 75% 70%, 50% 100%, 25% 70%, 0 57%, 0 28%, 0 0);
-    z-index: -1;
-}
-
-.abaut222{
-    height: 100%;
-    width: 100%;
-    min-height: 100px; 
-    background-color: #000000;
-    opacity: 1;
-    background-color: #b5daff;
-    opacity: 0.8;
-    background-image: radial-gradient(#000000 1.2000000000000002px, #b5daff 1.2000000000000002px);
-    background-size: 24px 24px;
-    }
-.main__about222{
-    font-size: 30px;
-    text-align: justify;
-    color: rgb(0, 0, 0);
-}
-.main__about222__sub{
-    margin: 30px;
-    font-size: 30px;
-    text-align: justify;
-    color: rgb(0, 0, 0);
-}
-.abaut222__Text{
-    font-size: 40px;
-    text-align: justify;
-    color: rgb(0, 0, 0);
-}
-.abaut333__Container{
-    display: grid; 
-    align-items: center;
-    grid-template-columns: 1fr;
-
-}
-/*Desarollo de la cuarta pagina*/
-.container4{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: var(--padding-container);
-}
-.hero__container4{
-    text-align: center;
-}
-.hero4{
-    width: 100%;
-    height: 100vh;
-    min-height: 400px;
-    max-height: 500px;
-    position: relative;
-    display: grid; 
-    grid-template-rows: 100px 1fr;
-    color: white;
-}
-
-.hero4::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../Imagenes/Fondo4.png') ;
-    background-size: 100%;
-    clip-path: polygon(53% 0, 100% 0, 100% 24%, 100% 53%, 75% 70%, 50% 100%, 25% 70%, 0 57%, 0 28%, 0 0);
-    z-index: -1;
-}
-.abaut4{
-    height: 100%;
-    width: 100%;
-    min-height: 100px; 
-    opacity: 1;
-    opacity: 0.8;
-    background-image: radial-gradient(#000000 1.2000000000000002px, #7cff8f 1.2000000000000002px);
-    background-size: 24px 24px;
-    }
